@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import FirstPage from "./components/FirstPage"
+import Header from "./components/Header"
+import Main from "./components/Main"
+import LastPage from "./components/LastPage"
+import Letter from "./components/Letter"
+import Message from "./components/Message"
+import FirstSlider from "./components/FirstSlider"
+import SecondSlider from "./components/SecondSlider"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <FirstPage />
+      <Header />
+      <Main />
+      <FirstSlider />
+      <Letter  />
+      <SecondSlider />
+      <Message />
+      <LastPage />
     </div>
   );
 }
